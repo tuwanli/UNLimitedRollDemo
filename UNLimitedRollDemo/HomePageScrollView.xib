@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BannerScrollView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7D-FS-dMI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="A0X-rj-66z"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="L7D-FS-dMI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gij-yS-sGp"/>
+                <constraint firstItem="L7D-FS-dMI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e9r-o4-y2a"/>
+                <constraint firstAttribute="trailing" secondItem="L7D-FS-dMI" secondAttribute="trailing" id="i8g-zR-Xmp"/>
+                <constraint firstAttribute="bottom" secondItem="L7D-FS-dMI" secondAttribute="bottom" id="kJ8-Bk-cqf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="L7D-FS-dMI" id="ojw-7C-fQW"/>
+            </connections>
+            <point key="canvasLocation" x="306" y="317"/>
+        </view>
+    </objects>
+</document>
